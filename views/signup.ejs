@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script>
+        numbers = (object) => {
+            console.log(object.value)
+            if (object.value.length > 3) {
+                object.value = object.value.slice(0, 4);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="logo">
+            <img src="Whitelogo.png" class="logopng">
+        </div>
+        <div class="line"></div>
+        <div class="content">
+            <div class="header">
+                Sign-in
+            </div>
+            <form action="/signup" method="POST">
+                <div class="access">
+                    <div class="accesslist"><input type="text" name="id" class="txtb" placeholder="아이디"></div>
+                    <div class="accesslist"><input type="password" name="password" class="txtb" placeholder="비밀번호">
+                    </div>
+                    <div class="accesslist"><input type="password" name="password" class="txtb" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="accesslist"><input type="email" name="mail" class="txtb" placeholder="이메일"></div>
+                    <div class="accesslist">
+                        <span><input type="number" name="number" class="txtbr" placeholder="학번"
+                                onkeyup="numbers(this)"></span>
+                        <!--학번 최대 4자리 코드좀-->
+                        <span><input type="text" name="name" class="txtbr" placeholder="이름"></span>
+                    </div>
+                </div>
+                <input type="submit" class="Submit" value="가입">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

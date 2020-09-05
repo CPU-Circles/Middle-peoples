@@ -1,0 +1,131 @@
+*{
+    font-family: 나눔스퀘어;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    --dark:#000;
+    --white:#fff;
+}
+
+:focus{
+    outline: none;
+}
+
+input[type=password] {
+    font-family: "arial";
+}
+input[type=password]::placeholder {
+    font-family: "나눔스퀘어";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+    background: var(--dark);
+}
+
+.box {
+    margin-top: 50px
+}
+
+.logo img{
+    display: block;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid var(--white);
+    margin-top: 20px;
+    width:400px;
+    margin-bottom: 20px;
+}
+
+.content{
+    text-align: center;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: photograph signature;
+    color:var(--white);
+}
+
+.access{
+    margin-top: 20px;
+}
+
+.accesslist{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.txtb{
+    text-align: center;
+    width:250px;
+    height: 30px;
+    border: 2px rgb(119, 119, 119) solid;
+    border-radius: 15px;
+    transition: .2s;
+    background: #000;
+    color:#fff;
+}
+
+.txtb:focus {
+    width: 300px;
+    border: 2px #F6C700 solid;
+    transition: .2s;
+}
+
+.txtbr{
+    text-align: center;
+    width:70px;
+    height: 30px;
+    border: 2px rgb(119, 119, 119) solid;
+    border-radius: 15px;
+    transition: .2s;
+    background: #000;
+    color:#fff;
+}
+.txtbr:focus {
+    width: 100px;
+    border: 2px #F6C700 solid;
+    transition: .2s;
+}
+
+.Submit {
+    margin-top: 30px;
+    text-align: center;
+    width:100px;
+    height: 30px;
+    background: #F6C700;
+    border: 0px #F6C700 solid;
+    border-radius: 15px;
+    transition: .1s;
+}
+
+.Submit:hover {
+    width:130px;
+    transition: .1s;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #F6C700;
+}

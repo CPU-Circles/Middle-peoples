@@ -1,0 +1,256 @@
+html{
+    min-height: 100%;
+}
+
+*{
+    font-family: 나눔스퀘어;
+    --bg-primary:#F6C700;
+    --bg-secondary:#000;
+    --bg-A:#b49300;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #F6C700;
+}
+
+body{
+    margin:0;
+    min-height: 100%;
+}
+
+li, a, button{
+    font-family: 나눔스퀘어;
+    font-size: 16px;
+    color:#fff;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 10%;
+    background-color: var(--bg-secondary);
+    height: 25px;
+}
+
+.logo {
+    cursor: pointer;
+    width:50px;
+    margin-right: auto;
+    transition: .1s;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    transition:.1s;
+}
+
+#userdat {
+    color:#b9b9b9;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+    color:var(--bg-primary);
+}
+
+
+
+.CentralLogo{
+    width: 200px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.Title{
+    font-size:35px;
+    font-weight: bold;
+}
+
+.line{
+    width:70%;
+    border-bottom:3px solid black;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition:.1s;
+}
+
+.des{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ilbtngroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    margin-bottom: 100px;
+}
+
+.ilbtn{
+    background: #3B3838;
+    width:185px;
+    border-radius: 20px;
+    height: 235px;
+    text-align: center;
+    transition:.3s;
+}
+
+.ilbtn:hover{
+    background:#767171;
+    transition:.3s;
+}
+
+.ilbtn svg:hover{
+    animation-name: Rotation;
+    animation-duration: .8s;
+}
+
+@keyframes Rotation {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+.ilbtn svg{
+    width:90px;
+    margin-top:20px;
+    margin-bottom:10px;
+    animation-duration: .8s;
+}
+
+.illine{
+    margin-left: auto;
+    margin-right: auto;
+    width:120px;
+    border-bottom:3px solid #F6C700;
+}
+
+.iltitle {
+    color: #F6C700;
+    margin:10px;
+    font-size:22px;
+    font-weight: bold;
+}
+
+.ildes{
+    color:#fff;
+    width:130px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.bottom{
+    width:100%;
+    height: 100px;
+    text-align: center;
+    background: #000;
+    color:#b6b6b6;
+    bottom:0;
+    position: absolute;
+
+}
+
+.bottomtext{
+    padding-top:15px;
+}
+
+.int{
+    font-family: photograph signature;
+    font-size: 30px;
+}
+
+/* .back1{
+    position: absolute;
+    background:#F2F2F2;
+    width:75%;
+    height: 600px;
+} */
+
+@media(max-width:710px) {
+    .line{
+        width:60%;
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        transition:.1s;
+    }
+
+    .nav-links li{
+        display: inline-block;
+        padding: 0 10px;
+        transition:.1s;
+    }
+
+    .nav-links li:nth-child(2){
+        order:0;
+    }
+    .nav-links li:nth-child(3){
+        order:1;
+    }
+    .nav-links li:nth-child(4){
+        order:2;
+    }
+    .nav-links li:nth-child(1){
+        order:3;
+        margin-left: 0;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    .ilbtngroup{
+        width:480px;
+        margin-bottom: 100px;
+    }
+
+    .ilbtn{
+        background: #3B3838;
+        width:155px;
+        border-radius: 20px;
+        height: 200px;
+        text-align: center;
+        transition:.3s;
+    }
+
+    .ilbtn svg{
+        width:90px;
+        margin-top:20px;
+        margin-bottom:10px;
+        animation-duration: .8s;
+    }
+
+    .ildes{
+        display: none;
+    }
+
+
+
+}

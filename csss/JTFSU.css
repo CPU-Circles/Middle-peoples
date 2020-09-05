@@ -1,0 +1,55 @@
+body{
+    background:#000;
+    font-family: 나눔스퀘어;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width:120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #fff;
+    margin-top: 20px;
+    width:400px;
+    margin-bottom: 20px;
+}
+
+.des{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: photograph signature;
+    color:#fff;
+}
+
+.des2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:#fff;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 나눔스퀘어;
+    margin-top: 30px;
+    text-align: center;
+    width:100px;
+    height: 30px;
+    background: #F6C700;
+    border: 0px #F6C700 solid;
+    border-radius: 15px;
+    transition: .1s;
+}
+
+button:hover {
+    width:130px;
+    transition: .1s;
+}
